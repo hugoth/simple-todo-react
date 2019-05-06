@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.spotList {
+  list-style: none;
+  font-size: 20px;
+  line-height: 25px;
+  font: #606c76;
+  font-weight: normal;
+  display: flex;
+}
+
+ul {
+  padding: 0;
+}
+
+.input {
+  width: 50rem;
+  height: 2rem;
+  padding-left: 10px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+#button {
+  margin: 5px 0px;
+  background-color: #9b4dcb;
+  /* width: 20rem; */
+  height: 2rem;
+  border-radius: 5px;
+  font-size: 15px;
+  color: white;
+  font-weight: bold;
+  flex: 1;
+}
+input,
+button:focus {
+  outline: 0;
+}
+
+.spots {
+  padding-left: 10px;
+}
