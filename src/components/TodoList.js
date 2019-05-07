@@ -18,12 +18,12 @@ class TodoList extends Component {
   };
 
   handleAddSpot = e => {
-    console.log(this.state.listSpot);
+    const newid = Date.now();
     const { title } = this.state.spot;
     const newTask = {
       title: title,
       Isdone: false,
-      key: Date.now()
+      id: newid
     };
 
     this.setState(PrevState => {
@@ -39,7 +39,8 @@ class TodoList extends Component {
     axios
       .post("https://todo-server-hth.herokuapp.com/create", {
         title: this.state.spot.title,
-        isDone: false
+        isDone: false,
+        id: newid
       })
       .then(function(response) {
         console.log(response.data.message);
