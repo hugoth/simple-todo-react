@@ -97,7 +97,7 @@ class TodoList extends Component {
   render() {
     return (
       <div className="container">
-        <h1>To-Do list</h1>
+        <h1>La To-Do list de Chloé</h1>
         <Spot
           value={this.state.listSpot}
           onClickDone={this.handleDoneSpot}
