@@ -72,7 +72,7 @@ class TodoList extends Component {
   handleDelete = selectedSpot => {
     const id = selectedSpot._id;
     axios
-      .post("hhttps://todo-server-hth.herokuapp.com/delete", {
+      .post("https://todo-server-hth.herokuapp.com/delete", {
         id: id
       })
       .then(function(response) {
